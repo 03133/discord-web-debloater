@@ -1,4 +1,4 @@
-# Discord Web Debloater
+# Discord Web Debloater (if u have any problem, dm on discord at @yk49)
 
 A Chrome extension that tidies up Discord in your browser. Hide ads and upsells, remove cosmetic clutter, clean up the chat, and add layout improvements. Every option is off by default, so you choose exactly what changes.
 
