@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Web Debloater",
+  "version": "1.2.5",
+  "description": "Client-side cosmetic cleanup for Discord Web. Every option starts off. Stores settings in chrome.storage.local only.",
+  "permissions": ["storage", "tabs"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Discord Debloater",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*", "https://*.discord.com/*"],
+      "js": ["lib/gsap.min.js", "content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

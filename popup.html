@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discord Debloater</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="icons/logo-transparent.png" width="40" height="40" alt="">
+      <span class="name">Debloater</span>
+      <span id="activeCount" class="count">0 active</span>
+    </div>
+    <div class="top-actions">
+      <label class="master" title="Pause or resume every rule">
+        <span id="masterLabel">Enabled</span>
+        <span class="switch">
+          <input type="checkbox" id="masterToggle" aria-label="Master switch">
+          <span class="track"></span>
+          <span class="knob"></span>
+        </span>
+      </label>
+      <button id="zapBtn" type="button" class="link-btn" title="Click any element on Discord to hide it">Pick element</button>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <input id="searchInput" type="search" placeholder="Search rules" spellcheck="false" autocomplete="off" aria-label="Search rules">
+    <select id="presetSelect" aria-label="Presets">
+      <option value="" selected disabled>Presets</option>
+      <option value="adfree">Ad and upsell free</option>
+      <option value="nocosmetics">No cosmetics</option>
+      <option value="minimalist">Minimalist and UX</option>
+      <option value="all">Turn on all</option>
+      <option value="none">Turn off all</option>
+    </select>
+    <button id="enableAllBtn" type="button" class="text-btn">All on</button>
+    <button id="disableAllBtn" type="button" class="text-btn">All off</button>
+  </div>
+
+  <nav class="tabs" id="categoryTabs" role="tablist" aria-label="Categories">
+    <button type="button" class="tab active" data-category="all" role="tab" aria-selected="true">All <span class="tab-count" id="count-all">53</span></button>
+    <button type="button" class="tab" data-category="active" role="tab" aria-selected="false">Active <span class="tab-count" id="count-active">0</span></button>
+    <button type="button" class="tab" data-category="improvements" role="tab" aria-selected="false">Improve</button>
+    <button type="button" class="tab" data-category="promos" role="tab" aria-selected="false">Promos</button>
+    <button type="button" class="tab" data-category="cosmetics" role="tab" aria-selected="false">Cosmetics</button>
+    <button type="button" class="tab" data-category="voice" role="tab" aria-selected="false">Voice</button>
+    <button type="button" class="tab" data-category="interface" role="tab" aria-selected="false">Chat</button>
+    <button type="button" class="tab" data-category="social" role="tab" aria-selected="false">Friends</button>
+    <button type="button" class="tab" data-category="custom" role="tab" aria-selected="false">Custom <span class="tab-count" id="count-custom">0</span></button>
+  </nav>
+
+  <main id="list" class="list"></main>
+
+  <footer class="foot">
+    <span id="status" class="status">Performance and motion: Discord Settings, Debloater</span>
+    <span class="foot-actions">
+      <button id="exportBtn" type="button" class="text-btn">Export</button>
+      <button id="importBtn" type="button" class="text-btn">Import</button>
+      <input type="file" id="importFile" accept=".json,application/json" hidden>
+    </span>
+  </footer>
+
+  <div class="credit">
+    <span>Made with love by @<a href="https://github.com/03133" target="_blank" rel="noopener noreferrer">yk49</a></span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
