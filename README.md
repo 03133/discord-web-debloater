@@ -1,3 +1,9 @@
+## ⚠️ ⚠️ ⚠️ Safety and limits (MUST READ) ⚠️ ⚠️ ⚠️
+
+This extension changes how Discord looks in your browser. It does not change Discord's servers, your account data, or the messages you send. Still, no client-side tool can promise that a Discord account will never be flagged, and changing the Discord web client may conflict with Discord's Terms of Service. Use it at your own risk.
+
+Discord updates its class names regularly. When Discord changes its page structure, some rules may stop matching until the extension is updated.
+
 # Discord Web Debloater (if u have any problem, dm on discord at @yk49)
 
 A Chrome extension that tidies up Discord in your browser. Hide ads and upsells, remove cosmetic clutter, clean up the chat, and add layout improvements. Every option is off by default, so you choose exactly what changes.
@@ -43,19 +49,11 @@ Layout options such as auto-hide sidebars and server dock on hover, compact chan
 - Interactive overlays (the Debloater panel and element picker) use a closed Shadow DOM.
 - Permissions: `storage` for saving settings, and `tabs` to send the "Pick element" command to the active Discord tab.
 
-## Safety and limits
-
-This extension changes how Discord looks in your browser. It does not change Discord's servers, your account data, or the messages you send. Still, no client-side tool can promise that a Discord account will never be flagged, and changing the Discord web client may conflict with Discord's Terms of Service. Use it at your own risk.
-
-Discord updates its class names regularly. When Discord changes its page structure, some rules may stop matching until the extension is updated.
 
 ## Privacy
 
 The extension collects no data and makes no network requests of its own. All settings stay on your device.
 
-## Contributing
-
-Issues and pull requests are welcome. Before opening a pull request, run the test suite in `tests/` (Playwright with Chromium) and check that all tests pass.
 
 ## Credits
 
