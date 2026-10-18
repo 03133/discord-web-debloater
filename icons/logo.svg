@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <!-- Deep obsidian squircle background -->
+  <rect width="512" height="512" rx="116" fill="#111214"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" stroke="#ffffff" stroke-opacity="0.06" stroke-width="4"/>
+
+  <!-- Left solid half of the D-Shield (Blurple) -->
+  <path d="M256 120L140 163V252C140 307 159 354 189 387L256 303V206L293 163L321 144L256 120Z" fill="#5865F2"/>
+
+  <!-- Bottom-right hollowed D-Shield contour (Blurple) -->
+  <path d="M361 160L372 164V252C372 342 321 404 256 436L201 399L256 335V381C299 355 327 308 331 242L273 308L361 160Z" fill="#5865F2"/>
+
+  <!-- Precision Razor Slash (Debloat cut) -->
+  <path d="M392 96L124 408L251 281L392 96Z" fill="#F8FAFC"/>
+  <path d="M124 408L392 96L263 233L124 408Z" fill="#FFFFFF"/>
+</svg>
