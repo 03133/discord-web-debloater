@@ -2,7 +2,7 @@
 
 A Chrome extension that tidies up Discord in your browser. Hide ads and upsells, remove cosmetic clutter, clean up the chat, and add layout improvements. Every option is off by default, so you choose exactly what changes.
 
-![Popup](tests/shot_popup2.png)
+![Popup](tests/Lf38qnbYUUcvAaqYGsJMm9WgENDYGr4XTRfIxfAN57s.png)
 
 ## Features
 
